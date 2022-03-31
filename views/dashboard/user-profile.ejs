@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Label - Premium Responsive Bootstrap 4 Admin & Dashboard Template</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/mdi/css/materialdesignicons.css">
+    <link rel="stylesheet" href="../../../assets/vendors/css/vendor.addons.css">
+    <!-- endinject -->
+    <!-- vendor css for this page -->
+    <!-- End vendor css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../../assets/css/shared/style.css">
+    <!-- endinject -->
+    <!-- Layout style -->
+    <link rel="stylesheet" href="../../../assets/css/demo_1/style.css">
+    <!-- Layout style -->
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../css/toastr.css">
+  </head>
+  <body class="header-fixed">
+    <% let success_array = [] %>
+    <% let warning_array = [] %>
+    <% let error_array = [] %>
+    <% success.forEach(function(msg) { %>
+  
+        <% success_array.push(msg) %> 
+  
+    <% }) %>
+  
+    <% warning.forEach(function(war) { %>
+  
+        <% warning_array.push(war) %> 
+  
+    <% }) %>
+  
+    <% error.forEach(function(err) { %>
+  
+      <% error_array.push(err) %> 
+  
+    <% }) %>
+    <!-- partial:../../partials/_header.html -->
+    <nav class="t-header">
+      <div class="t-header-brand-wrapper">
+        <a href="../../index.html">
+          <img class="logo" src="../../../assets/images/logo.svg" alt="">
+          <img class="logo-mini" src="../../../assets/images/logo_mini.svg" alt="">
+        </a>
+      </div>
+      <div class="t-header-content-wrapper">
+        <div class="t-header-content">
+          <button class="t-header-toggler t-header-mobile-toggler d-block d-lg-none">
+            <i class="mdi mdi-menu"></i>
+          </button>
+          <form action="#" class="t-header-search-box">
+            <div class="input-group">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search" autocomplete="off">
+              <button class="btn btn-primary" type="submit"><i class="mdi mdi-arrow-right-thick"></i></button>
+            </div>
+          </form>
+          <ul class="nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="notificationDropdown" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-bell-outline mdi-1x"></i>
+              </a>
+              <div class="dropdown-menu navbar-dropdown dropdown-menu-right" aria-labelledby="notificationDropdown">
+                <div class="dropdown-header">
+                  <h6 class="dropdown-title">Notifications</h6>
+                  <p class="dropdown-title-text">You have 4 unread notification</p>
+                </div>
+                <div class="dropdown-body">
+                  <div class="dropdown-list">
+                    <div class="icon-wrapper rounded-circle bg-inverse-primary text-primary">
+                      <i class="mdi mdi-alert"></i>
+                    </div>
+                    <div class="content-wrapper">
+                      <small class="name">Storage Full</small>
+                      <small class="content-text">Server storage almost full</small>
+                    </div>
+                  </div>
+                  <div class="dropdown-list">
+                    <div class="icon-wrapper rounded-circle bg-inverse-success text-success">
+                      <i class="mdi mdi-cloud-upload"></i>
+                    </div>
+                    <div class="content-wrapper">
+                      <small class="name">Upload Completed</small>
+                      <small class="content-text">3 Files uploded successfully</small>
+                    </div>
+                  </div>
+                  <div class="dropdown-list">
+                    <div class="icon-wrapper rounded-circle bg-inverse-warning text-warning">
+                      <i class="mdi mdi-security"></i>
+                    </div>
+                    <div class="content-wrapper">
+                      <small class="name">Authentication Required</small>
+                      <small class="content-text">Please verify your password to continue using cloud services</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <a href="#">View All</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="messageDropdown" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-message-outline mdi-1x"></i>
+                <span class="notification-indicator notification-indicator-primary notification-indicator-ripple"></span>
+              </a>
+              <div class="dropdown-menu navbar-dropdown dropdown-menu-right" aria-labelledby="messageDropdown">
+                <div class="dropdown-header">
+                  <h6 class="dropdown-title">Messages</h6>
+                  <p class="dropdown-title-text">You have 4 unread messages</p>
+                </div>
+                <div class="dropdown-body">
+                  <div class="dropdown-list">
+                    <div class="image-wrapper">
+                      <img class="profile-img" src="../../../assets/images/profile/male/image_1.png" alt="profile image">
+                      <div class="status-indicator rounded-indicator bg-success"></div>
+                    </div>
+                    <div class="content-wrapper">
+                      <small class="name">Clifford Gordon</small>
+                      <small class="content-text">Lorem ipsum dolor sit amet.</small>
+                    </div>
+                  </div>
+                  <div class="dropdown-list">
+                    <div class="image-wrapper">
+                      <img class="profile-img" src="../../../assets/images/profile/female/image_2.png" alt="profile image">
+                      <div class="status-indicator rounded-indicator bg-success"></div>
+                    </div>
+                    <div class="content-wrapper">
+                      <small class="name">Rachel Doyle</small>
+                      <small class="content-text">Lorem ipsum dolor sit amet.</small>
+                    </div>
+                  </div>
+                  <div class="dropdown-list">
+                    <div class="image-wrapper">
+                      <img class="profile-img" src="../../../assets/images/profile/male/image_3.png" alt="profile image">
+                      <div class="status-indicator rounded-indicator bg-warning"></div>
+                    </div>
+                    <div class="content-wrapper">
+                      <small class="name">Lewis Guzman</small>
+                      <small class="content-text">Lorem ipsum dolor sit amet.</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <a href="#">View All</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="appsDropdown" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-apps mdi-1x"></i>
+              </a>
+              <div class="dropdown-menu navbar-dropdown dropdown-menu-right" aria-labelledby="appsDropdown">
+                <div class="dropdown-header">
+                  <h6 class="dropdown-title">Apps</h6>
+                  <p class="dropdown-title-text mt-2">Authentication required for 3 apps</p>
+                </div>
+                <div class="dropdown-body border-top pt-0">
+                  <a class="dropdown-grid">
+                    <i class="grid-icon mdi mdi-jira mdi-2x"></i>
+                    <span class="grid-tittle">Jira</span>
+                  </a>
+                  <a class="dropdown-grid">
+                    <i class="grid-icon mdi mdi-trello mdi-2x"></i>
+                    <span class="grid-tittle">Trello</span>
+                  </a>
+                  <a class="dropdown-grid">
+                    <i class="grid-icon mdi mdi-artstation mdi-2x"></i>
+                    <span class="grid-tittle">Artstation</span>
+                  </a>
+                  <a class="dropdown-grid">
+                    <i class="grid-icon mdi mdi-bitbucket mdi-2x"></i>
+                    <span class="grid-tittle">Bitbucket</span>
+                  </a>
+                </div>
+                <div class="dropdown-footer">
+                  <a href="#">View All</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="page-body">
+      <!-- partial:../../partials/_sidebar.html -->
+      <div class="sidebar">
+        <div class="user-profile">
+          <div class="display-avatar animated-avatar">
+            <img class="profile-img img-lg rounded-circle" src="../assets/images/uploads/<% if(students.image == "") { %>dummy.jpg<% } else { %><%= students.image %><% } %>" alt="profile image">
+          </div>
+          <div class="info-wrapper">
+            <p class="user-name"><%= students.name %></p>
+            <p class="display-income"><%= students.email %></p>
+          </div>
+        </div>
+        <ul class="navigation-menu">
+          <li class="nav-category-divider">MAIN</li>
+          <li>
+            <a href="index?q=<%= students._id %>">
+              <span class="link-title">Dashboard</span>
+              <i class="mdi mdi-gauge link-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#course" data-toggle="collapse" aria-expanded="false">
+              <span class="link-title">Courses</span>
+              <i class="mdi mdi-pen link-icon"></i>
+            </a>
+            <ul class="collapse navigation-submenu" id="course">
+              <li>
+                <a href="mycourse?q=<%= students._id %>">My course</a>
+              </li>
+              <li>
+                <a href="a-course?q=<%= students._id %>">Available courses</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-category-divider">PROFILE</li>
+          <li>
+            <a href="user-profile?q=<%= students._id %>">
+              <span class="link-title">My Profile</span>
+              <i class="mdi mdi-account-circle link-icon"></i>
+            </a>
+          </li>
+          <li class="nav-category-divider">SIGN OUT</li>
+          <li>
+            <a href="/logout">
+              <span class="link-title">Log out</span>
+              <i class="mdi mdi-logout link-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- partial -->
+      <div class="page-content-wrapper">
+        <div class="page-content-wrapper-inner">
+          <div class="viewport-header">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb has-arrow">
+                <li class="breadcrumb-item">
+                  <a href="#">Dashboard</a> 
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Forms</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">My profile</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="content-viewport">
+            <p class="grid-header">My details</p>
+            <div class="row">
+              <div class="col-lg-6 equel-grid">
+                <div class="grid">
+                  <div class="grid-body">
+                    <div class="item-wrapper">
+                      <form>
+                        <div class="form-group">
+                            <i class="mdi mdi-account-circle link-icon"></i>
+                          <label for="inputEmail1">Name</label>
+                          <p><%= students.name %></p>
+                        </div>
+                        <div class="form-group">
+                          <i class="mdi mdi-email-outline"></i>
+                            <label for="inputEmail1">Email</label>
+                            <p><%= students.email %></p>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-sitemap"></i>
+                            <label for="inputEmail1">Occupation</label>
+                            <% if(students.occupation == "") { %> <p>-</p>
+                            <% } else { %>
+                                <p><%= students.occupation %></p>
+                            <% } %>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-cellphone-android"></i>
+                            <label for="inputEmail1">Phone number</label>
+                            <% if(students.telephone == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.telephone %></p>
+                                <% } %>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-android-studio"></i>
+                            <label for="inputEmail1">Address</label>
+                            <% if(students.address == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.address %></p>
+                                <% } %>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-city"></i>
+                            <label for="inputEmail1">City</label>
+                            <% if(students.city == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.city %></p>
+                                <% } %>
+                          </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 equel-grid">
+                <div class="grid">
+                  <div class="grid-body">
+                    <div class="item-wrapper">
+                      <form>
+                        <div class="form-group">
+                          <i class="mdi mdi-image-filter-hdr"></i>
+                          <label for="inputEmail1">State</label>
+                          <% if(students.state == "") { %> <p>-</p>
+                            <% } else { %>
+                                <p><%= students.state %></p>
+                            <% } %>
+                        </div>
+                        <div class="form-group">
+                          <i class="mdi mdi-compass"></i>
+                            <label for="inputEmail1">Postal code</label>
+                            <% if(students.postcode == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.postcode %></p>
+                                <% } %>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-linkedin-box"></i>
+                            <label for="inputEmail1">LinkedIn</label>
+                            <% if(students.linkedIn == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.linkedIn %></p>
+                                <% } %>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-facebook"></i>
+                            <label for="inputEmail1">Facebook</label>
+                            <% if(students.facebook == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.facebook %></p>
+                                <% } %>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-twitter"></i>
+                            <label for="inputEmail1">Twitter</label>
+                            <% if(students.twitter == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.twitter %></p>
+                                <% } %>
+                          </div>
+                          <div class="form-group">
+                            <i class="mdi mdi-instagram"></i>
+                            <label for="inputEmail1">Instagram</label>
+                            <% if(students.instagram == "") { %> <p>-</p>
+                                <% } else { %>
+                                    <p><%= students.instagram %></p>
+                                <% } %>
+                          </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-viewport">
+            <div class="row">
+            <div class="col-lg-12 equel-grid">
+                <div class="grid">
+                    <p class="grid-header">Edit profile</p>
+                    <div class="grid-body">
+                    <div class="item-wrapper">
+                        <form action="/update-profile?q=<%= students._id %>" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="inputEmail1">Name</label>
+                                <input type="text" class="form-control" value="<%= students.name %>" id="inputEmail1" name="name" placeholder="Name" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Email</label>
+                                <input type="email" class="form-control" value="<%= students.email %>" id="inputEmail1" name="email" placeholder="Your email here" readonly>
+                            </div>
+                            <div class="form-group">
+                              <label for="customFile">Profile image</label>
+                              <input type="file" class="form-control form-control-lg" id="customFile" name="image" value="<%= students.image %>" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Occupation</label>
+                                <input type="text" class="form-control" value="<%= students.occupation %>" id="inputEmail1" name="occupation" placeholder="Your occupation here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Phone number</label>
+                                <input type="text" class="form-control" value="<%= students.telephone %>" id="inputEmail1" name="telephone" placeholder="Your phone number here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Address</label>
+                                <input type="text" class="form-control" value="<%= students.address %>" id="inputEmail1" name="address" placeholder="Your address here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">City</label>
+                                <input type="text" class="form-control" value="<%= students.city %>" id="inputEmail1" name="city" placeholder="Your city here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">State</label>
+                                <input type="text" class="form-control" value="<%= students.state %>" id="inputEmail1" name="state" placeholder="Your state here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Postal code</label>
+                                <input type="text" class="form-control" value="<%= students.postcode %>" id="inputEmail1" name="postcode" placeholder="Your postal code here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">LinkedIn</label>
+                                <input type="text" class="form-control" value="<%= students.linkedIn %>" id="inputEmail1" name="linkedIn" placeholder="Your linkedIn here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Facebook</label>
+                                <input type="text" class="form-control" value="<%= students.facebook%>" id="inputEmail1" name="facebook" placeholder="Your facebook here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Twitter</label>
+                                <input type="text" class="form-control" value="<%= students.twitter %>" id="inputEmail1" name="twitter" placeholder="Your twitter here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail1">Instagram</label>
+                                <input type="text" class="form-control" value="<%= students.instagram %>" id="inputEmail1" name="instagram" placeholder="Your instagram here" required>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary">Update profile</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 equel-grid">
+            <div class="grid">
+                <p class="grid-header">Change password</p>
+                <div class="grid-body">
+                <div class="item-wrapper">
+                    <form action="/change-password?q=<%= students._id %>" method="POST">
+                    <div class="form-group">
+                        <label for="inputEmail1">Old password</label>
+                        <input type="password" class="form-control" id="inputEmail1" name="oldpass" placeholder="Enter your old password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword1"> New password</label>
+                        <input type="password" class="form-control" id="inputPassword1" name="newpass" placeholder="Enter your new password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword1"> New password</label>
+                        <input type="password" class="form-control" id="inputPassword1" name="confpass" placeholder="confirmpassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-primary">Change password</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- content viewport ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="row">
+            <div class="col-sm-6 text-center text-sm-right order-sm-1">
+              <ul class="text-gray">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 text-center text-sm-left mt-3 mt-sm-0">
+              <small class="text-muted d-block">Copyright © 2019. All rights reserved</small>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- page content ends -->
+    </div>
+    <!--page body ends -->
+    <!-- SCRIPT LOADING START FORM HERE /////////////-->
+    <!-- plugins:js -->
+    <script src="../../../assets/vendors/js/core.js"></script>
+    <script src="../../../assets/vendors/js/vendor.addons.js"></script>
+    <!-- endinject -->
+    <!-- Vendor Js For This Page Ends-->
+    <!-- Vendor Js For This Page Ends-->
+    <!-- build:js -->
+    <script src="../../../assets/js/template.js"></script>
+    <!-- endbuild -->
+    <script src="../js/toastr.min.js"></script>
+    <script>
+      toastr.options = {
+        "closeButton": true,
+        "progressBar": true
+      }
+
+      $(document).ready(function() {
+
+        let toastsuc = "<%= success_array %>"
+        let toastwar = "<%= warning_array %>"
+        let toasterr = "<%= error_array %>"
+
+        if (toastsuc != '') {
+          toastr.success(toastsuc)
+        }
+
+        if (toastwar != '') {
+          toastr.warning(toastwar)
+        }
+
+        if (toasterr != '') {
+          toastr.error(toasterr)
+        }
+
+      })
+    </script>    
+  </body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams">
+    <title>Name of company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toastr.css">
+</head>
+
+<body>
+  <% let success_array = [] %>
+  <% let warning_array = [] %>
+  <% let error_array = [] %>
+  <% success.forEach(function(msg) { %>
+
+      <% success_array.push(msg) %> 
+
+  <% }) %>
+
+  <% warning.forEach(function(war) { %>
+
+      <% warning_array.push(war) %> 
+
+  <% }) %>
+
+  <% error.forEach(function(err) { %>
+
+    <% error_array.push(err) %> 
+
+  <% }) %>
+      <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index"><img claass="w-100" src="img/icon/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link  active" href="index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog">Blog</a>
+              </li>         
+            </ul>
+            <ul class="right navbar-nav ms-auto">
+              <li class="nav-item-right">
+                <a class="nav-link-right" href="sign">Login / Sign Up</a>
+              </li>
+              <li class="nav-item-right">
+                <a class="nav-link-right btn-fill" href="sign">Start Today</a>
+              </li>       
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- Intro -->
+        <div class="container">
+          <div class="intro pb-5">
+            <div class="intro-text">
+              <h1 class="intro-h1">Learn Trending Tech Skills for the Future of Work</h1>
+              <p class="front-page">We stand on the brink of a technology revolution that will fundamentally alter the way we Live, Work, and Relate to one another.</p>
+              <div class="buttons">
+                <a href="" class="btn-fill">Read More</a>
+              <a href="" class="btn-outline">Start Today</a>
+              </div>
+            </div>
+            <div class="intro-img">
+                <img src="img/header-img.png" alt="">
+            </div>
+          </div>
+          <!-- Clients -->
+          <div class="clients text-center">
+            <p class="text-muted text-uppercase pb-4">Some of our trusted clients</p>
+            <div class="client-logo">
+              <div><img src="img/icon/go-sm-logo.svg" alt=""></div>
+              <div><img src="img/icon/social-road-logo.svg" alt=""></div>
+              <div><img src="img/icon/firmbee-logo.svg" alt=""></div>
+              <div><img src="img/icon/create-paper.svg" alt=""></div>
+              <div><img src="img/icon/point-design-logo.svg" alt=""></div>
+            </div>
+          </div>
+
+          <!-- Variations -->
+          <div id="variations" class="variations">
+            <div class="first-variation">
+              <div class="img">
+                <img src="img/man.png" alt="">
+              </div>
+              <div class="text">
+                <h1 class="variations-h1">Facilitated by Industry Experts</h1>
+                <p class="front-page">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="buttons">
+                  <a href="" class="btn-fill">Read More</a>
+                <a href="" class="btn-outline">Start Today</a>
+                </div>
+              </div>
+            </div>
+            <div class="second-variation">
+              <div class="text">
+                <h1 class="variations-h1">Industry Recognised Certificates</h1>
+                <p class="front-page">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="buttons">
+                  <a href="" class="btn-fill">Read More</a>
+                  <a href="" class="btn-outline">Start Today</a>
+                </div>
+              </div>
+              <div class="img">
+                <img src="img/woman.png" alt="">
+                <img class = "square" src="img/icon/square.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Service -->
+          <div class="service">
+            <h1>Top Notch Service</h1>
+            <p class="front-page">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="service-items">
+              <div class="item">
+                <img src="img/icon/code-icon.svg" alt="">
+                <span class="counter">7 453 664</span>
+                <span>Kilometers <br>of code written</span>
+              </div>
+              <div class="item">
+                <img src="img/icon/cofee-icon.svg" alt="">
+                <span class="counter">43 657</span>
+                <span>Coffees<br>drunk</span>
+              </div>
+              <div class="item">
+                <img src="img/icon/satisfied-client-icon.svg" alt="">
+                <span class="counter">1 764</span>
+                <span>Satisfied<br>customers</span>
+              </div>
+              <div class="item">
+                <img src="img/icon/realized-projects-icon.svg" alt="">
+                <span class="counter">36 874</span>
+                <span>Realized<br>projects</span>
+              </div>
+            </div>
+          </div>
+          <!-- Newsletter -->
+
+          <div class="update-news">
+            <div class="row">
+              <div class="col-md-5 news-text">
+                <h2>Get your update news</h2>
+                <p>If you going to use a passage of Lotem Ipsum, you need to be sure there  isn’t anything embarrassing.</p>
+              </div>
+              <form class="col-md-7 news-form" method="POST" action="/newsletter">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+            </div>
+
+            <!-- Team -->
+          <div class="team text-center">
+            <h1>Our Team</h1>
+            <p class="front-page">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="team-person">
+              <div class="person">
+                <div class="photo"><img src="img/team-1.png" alt=""></div>
+                <span class="name">John Fox</span>
+                <span>Marketing Manager</span>
+              </div>
+              <div class="person">
+                <div class="photo"><img src="img/team-2.png" alt=""></div>
+                <span class="name">Kate Rose</span>
+                <span>SEO</span>
+              </div>
+              <div class="person">
+                <div class="photo"><img src="img/team-3.png" alt=""></div>
+                <span class="name">Anna Brown</span>
+                <span>UI Expert</span>
+              </div>
+              <div class="person">
+                <div class="photo"><img src="img/team-4.png" alt=""></div>
+                <span class="name">Mike Doe</span>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+          <div class="container text-center text-md-start py-5">
+            <div class="footer-wrap">
+              <div class="about">
+                <img src="./img/icon/logo.svg" alt="">
+                <p class="text-muted py-4">
+                  Start working with Firmbee which can provide you with all the tools needed to run an effcieint business remotely.
+                </p>
+                <div class="social-media">
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-01.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-02.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-03.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-04.svg" alt=""></a>
+                </div>
+              </div>
+
+              <div class="company">
+                <h6 class="fw-bold">Company</h6>
+                <p><a href="">About us</a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Team</a></p>
+                <p><a href="">Pricing</a></p>
+                <p><a href="">Project</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Login</a></p>
+              </div>
+              
+              <div class="useful-links">
+                <h6 class="fw-bold">Useful links</h6>
+                <p><a href="">Terms of </a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="">Documentation</a></p>
+                <p><a href="">Changelog</a></p>
+                <p><a href="">Components</a></p>
+              </div>
+
+              <div class="newsletter">
+                <h6 class="fw-bold">Newsletter</h6>
+                <p class="text-muted">Sign up and receive the latest tips
+                  via email.</p>
+                  <form id="subscribe" method="POST" action="/newsletter">
+                    <label for="email">Youre e-mail:</label>
+                    <input type="email" placeholder="e-mail:" name="email" required>
+                    <button type="submit" class="btn-fill" >Subscribe</button>
+                  </form>
+              </div>
+              
+            </div>
+            <div class="copyright">
+              <p>&copy; 2022 YOUR-DOMAIN | Created by <a href="https://firmbee.com/solutions/free-invoicing-app-billing-software/" title="Firmbee - Free Invoicing App">Firmbee.com</a></p>
+            </div>
+          </div>
+        
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script>
+      toastr.options = {
+        "closeButton": true,
+        "progressBar": true
+      }
+
+      $(document).ready(function() {
+
+        let toastsuc = "<%= success_array %>"
+        let toastwar = "<%= warning_array %>"
+        let toasterr = "<%= error_array %>"
+
+        if (toastsuc != '') {
+          toastr.success(toastsuc)
+        }
+
+        if (toastwar != '') {
+          toastr.warning(toastwar)
+        }
+
+        if (toasterr != '') {
+          toastr.error(toasterr)
+        }
+
+      })
+    </script>    
+</body>
+</html>
