@@ -1,2 +1,1 @@
-# School-system
-School system project
+The E-learning System API revolutionizes online education by facilitating seamless communication between e-learning platforms and software applications. With standardized methods for course management and user interaction, it empowers educational institutions and learners with automated workflows, personalized learning experiences, and streamlined access to educational resources, leading to enhanced online learning outcomes.
